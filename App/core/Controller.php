@@ -12,7 +12,13 @@ class Controller
      */
     public function view(String $view, $data = null){
 
-        $section['header'] = $this->section('home/header');
+        $section['navbar'] = $this->section('template/navbar');
+        $section['sidebar'] = $this->section('template/sidebar');
+        $section['footer'] = $this->section('template/footer');
+
+
+        // $section['test'] = $this->section('home/test');
+
         require VPATH.$view.'.php';
 
     }
@@ -40,6 +46,15 @@ class Controller
 
 
         /** Geting Content */
-        return file_get_contents(VPATH.$view.".php");
+        $file = fopen(VPATH.$view.".php","r");
+        $content = "";
+        while($line = fgets($file))
+        {
+            $line = str_replace('<?= BASEURL ?>',BASEURL,$line);
+            // $line = htmlspecialchars($line);
+            $content .= $line;
+        }
+
+        return $content;
     }
 }
