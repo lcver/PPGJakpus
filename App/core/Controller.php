@@ -12,12 +12,10 @@ class Controller
      */
     public function view(String $view, $data = null){
 
-        $section['navbar'] = $this->section('template/navbar');
-        $section['sidebar'] = $this->section('template/sidebar');
-        $section['footer'] = $this->section('template/footer');
-
-
-        // $section['test'] = $this->section('home/test');
+        $section['cpanel']['navbar'] = $this->section('template/cpanel/navbar');
+        $section['cpanel']['sidebar'] = $this->section('template/cpanel/sidebar');
+        $section['cpanel']['footer'] = $this->section('template/cpanel/footer');
+        $section['cpanel']['content-header'] = $this->section('template/cpanel/content-header');
 
         require VPATH.$view.'.php';
 
