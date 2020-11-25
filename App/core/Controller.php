@@ -17,6 +17,11 @@ class Controller
         $section['cpanel']['footer'] = $this->section('template/cpanel/footer');
         $section['cpanel']['content-header'] = $this->section('template/cpanel/content-header');
 
+        $section['page']['navbar'] = $this->section('template/homepage/navbar');
+        $section['page']['header'] = $this->section('template/homepage/header');
+        $section['page']['sidebar'] = $this->section('template/homepage/sidebar');
+        $section['page']['footer'] = $this->section('template/homepage/footer');
+
         require VPATH.$view.'.php';
 
     }
