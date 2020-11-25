@@ -28,6 +28,37 @@
             <p>Dashboard</p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-newspaper nav-icon"></i>
+            <p>Postingan</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-calendar-alt nav-icon"></i>
+            <p>Kegiatan</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa fa-camera-retro nav-icon"></i>
+            <p>Kegiatan</p>
+          </a>
+        </li>
+        <li class="nav-header">DOCUMENT</li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-users"></i>
+            <p>Sensus</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fas fa-book-open"></i>
+            <p>LPJ</p>
+          </a>
+        </li>
         <li class="nav-header">EXCLUDE</li>
         <li class="nav-item has-treeview">
           <a href="#" class="nav-link">
@@ -39,7 +70,13 @@
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Absensi</p>
+                <p>Data Absensi</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-cogs nav-icon"></i>
+                <p>Konfigurasi</p>
               </a>
             </li>
           </ul>
