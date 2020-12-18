@@ -29,7 +29,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="<?= BASEURL ?>admin/postingan" class="nav-link">
             <i class="fas fa-newspaper nav-icon"></i>
             <p>Postingan</p>
           </a>
