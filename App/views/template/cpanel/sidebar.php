@@ -31,7 +31,7 @@
         <li class="nav-item">
           <a href="<?= BASEURL ?>admin/postingan" class="nav-link">
             <i class="fas fa-newspaper nav-icon"></i>
-            <p>Postingan</p>
+            <p>Postingan <span class="right badge badge-success"><></span></p>
           </a>
         </li>
         <li class="nav-item">
@@ -43,7 +43,7 @@
         <li class="nav-item">
           <a href="<?= BASEURL ?>admin/album" class="nav-link">
             <i class="fa fa-camera-retro nav-icon"></i>
-            <p>Album</p>
+            <p>Album <span class="right badge badge-success"><></span></p>
           </a>
         </li>
         <li class="nav-header">DOCUMENT</li>
