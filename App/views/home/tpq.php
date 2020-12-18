@@ -1,107 +1,268 @@
 <!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PPG Jakpus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- CSS BOOTSTRAP -->
-    <link rel="stylesheet" href="<?=BASEURL?>vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-    <style>
-        .navbar{
-            /* background-color: rgb(255,255,255,); */
-        }
-        .jumbotron-img {
-            background-image: url(<?=BASEURL?>dist/img/photo1.png);
-            background-size: cover;
-        }
-        .jumbotron {
-            height: 80vh;
-            /* border-radius: 0 0 5% 50%; */
-        }
-    </style>
+  <title>TPQ | PPG Jakpus</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="vendor/almasaeed2010/adminlte/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="vendor/almasaeed2010/adminlte/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body>
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="<?=BASEURL?>dist/img/ppg.png" height="30" width="30" alt="">
-                <span class="font-weight-bold">PPG Jakpus</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=BASEURL?>">PPGJakpus</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=BASEURL?>kegiatan">Kegiatan</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?=BASEURL?>tpq">TPQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=BASEURL?>galeri">Galeri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=BASEURL?>kontak">Kontak</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
 
-    <div class="jumbotron jumbotron-img">
-        <div class="container">
-        </div>
-    </div>
-
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-dark" style="padding-top: 25px;padding-bottom:25px;background-image: url('vendor/almasaeed2010/adminlte/dist/img/photo1.png');background-size: cover;">
     <div class="container">
-        <div class="text-center mb-3">
-            <h2 class="border-warning border-bottom" style="border-color: yellow;">TPQ</h2>
-        </div>
-        <!-- Blog Entries Column -->
-        <div class="row">
-            <div class="col-md-3 text-center my-3">
-                <img src="<?=BASEURL?>dist/img/boxed-bg.jpg" class="img-thumbnail m-0 p-0" alt="">
-            </div>
-            <div class="col-md-3 text-center my-3">
-                <img src="<?=BASEURL?>dist/img/boxed-bg.jpg" class="img-thumbnail m-0 p-0" alt="">
-            </div>
-            <div class="col-md-3 text-center my-3">
-                <img src="<?=BASEURL?>dist/img/boxed-bg.jpg" class="img-thumbnail m-0 p-0" alt="">
-            </div>
-            <div class="col-md-3 text-center my-3">
-                <img src="<?=BASEURL?>dist/img/boxed-bg.jpg" class="img-thumbnail m-0 p-0" alt="">
-            </div>
-            <div class="col-md-3 text-center my-3">
-                <img src="<?=BASEURL?>dist/img/boxed-bg.jpg" class="img-thumbnail m-0 p-0" alt="">
-            </div>
-            <div class="col-md-3 text-center my-3">
-                <img src="<?=BASEURL?>dist/img/boxed-bg.jpg" class="img-thumbnail m-0 p-0" alt="">
-            </div>
-            <div class="col-md-3 text-center my-3">
-                <img src="<?=BASEURL?>dist/img/boxed-bg.jpg" class="img-thumbnail m-0 p-0" alt="">
-            </div>
-            <div class="col-md-3 text-center my-3">
-                <img src="<?=BASEURL?>dist/img/boxed-bg.jpg" class="img-thumbnail m-0 p-0" alt="">
-            </div>
-        </div>
+        <a href="vendor/almasaeed2010/adminlte/index3.html" class="navbar-brand">
+        <img src="dist/img/ppg.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                style="opacity: .8; width:50px; height: 50px">
+        <span class="brand-text font-weight-light" style="font-size:40px;">PPG Jakpus</span>
+        </a>
     </div>
+    </nav>
+    <!-- /.navbar -->
 
-    <!-- Footer -->
-    <footer class="py-2 mt-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-dark bg-gray">
+      <div class="container">
+        <a href="./home.html" class="navbar-brand">
+            <img src="dist/img/ppg.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: .8">
+            <span class="brand-text font-weight-light">PPG Jakpus</span>
+        </a>
+        
+        <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="./kegiatan.html" class="nav-link">Kegiatan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">TPQ</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Galeri</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Kontak</a>
+                </li>
+            </ul>
         </div>
-        <!-- /.container -->
-    </footer>
-    <script src="<?=BASEURL?>dist/js/jquery/jquery.min.js"></script>
-    <script src="<?=BASEURL?>vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./tpq2.html">
+                  <div class="card m-2">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0" style="max-width: 75px">
+                        <div class="ml-2 d-flex">
+                          <p class="text-bold align-self-center">TPQ ALMUMDASAH</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./tpq2.html">
+                <div class="card m-2">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0" style="max-width: 75px">
+                      <div class="ml-2 d-flex">
+                        <p class="text-bold align-self-center">TPQ ALMUMDASAH</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./tpq2.html">
+                <div class="card m-2">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0" style="max-width: 75px">
+                      <div class="ml-2 d-flex">
+                        <p class="text-bold align-self-center">TPQ ALMUMDASAH</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./tpq2.html">
+                  <div class="card m-2">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0" style="max-width: 75px">
+                        <div class="ml-2 d-flex">
+                          <p class="text-bold align-self-center">TPQ ALMUMDASAH</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./tpq2.html">
+                <div class="card m-2">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0" style="max-width: 75px">
+                      <div class="ml-2 d-flex">
+                        <p class="text-bold align-self-center">TPQ ALMUMDASAH</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./tpq2.html">
+                <div class="card m-2">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0" style="max-width: 75px">
+                      <div class="ml-2 d-flex">
+                        <p class="text-bold align-self-center">TPQ ALMUMDASAH</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./tpq2.html">
+                  <div class="card m-2">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0" style="max-width: 75px">
+                        <div class="ml-2 d-flex">
+                          <p class="text-bold align-self-center">TPQ ALMUMDASAH</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./tpq2.html">
+                <div class="card m-2">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0" style="max-width: 75px">
+                      <div class="ml-2 d-flex">
+                        <p class="text-bold align-self-center">TPQ ALMUMDASAH</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="./tpq2.html">
+                <div class="card m-2">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0" style="max-width: 75px">
+                      <div class="ml-2 d-flex">
+                        <p class="text-bold align-self-center">TPQ ALMUMDASAH</p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title m-0">Featured</h5>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">Special title treatment</h6>
+
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="card-title m-0">Featured</h5>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">Special title treatment</h6>
+
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2019 PPG Jakpus</strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="vendor/almasaeed2010/adminlte/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="vendor/almasaeed2010/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
 </body>
 </html>

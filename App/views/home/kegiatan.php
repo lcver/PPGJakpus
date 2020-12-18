@@ -1,191 +1,175 @@
 <!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PPG Jakpus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- CSS BOOTSTRAP -->
-    <link rel="stylesheet" href="<?=BASEURL?>vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
-    <style>
-        .navbar{
-            /* background-color: rgb(255,255,255,); */
-        }
-        .jumbotron-img {
-            background-image: url(<?=BASEURL?>dist/img/photo1.png);
-            background-size: cover;
-        }
-        .jumbotron {
-            height: 80vh;
-            /* border-radius: 0 0 5% 50%; */
-        }
-        .img-mycustom {
-            max-height: 200px;
-        }
-    </style>
+  <title>Kegiatan | PPG Jakpus</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="vendor/almasaeed2010/adminlte/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="vendor/almasaeed2010/adminlte/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body>
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-dark" style="padding-top: 25px;padding-bottom:25px;background-image: url('vendor/almasaeed2010/adminlte/dist/img/photo1.png');background-size: cover;">
+    <div class="container">
+        <a href="vendor/almasaeed2010/adminlte/index3.html" class="navbar-brand">
+        <img src="dist/img/ppg.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                style="opacity: .8; width:50px; height: 50px">
+        <span class="brand-text font-weight-light" style="font-size:40px;">PPG Jakpus</span>
+        </a>
+    </div>
+    </nav>
+    <!-- /.navbar -->
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-dark bg-gray">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="<?=BASEURL?>dist/img/ppg.png" height="30" width="30" alt="">
-                <span class="font-weight-bold">PPG Jakpus</span>
+            <a href="./home.html" class="navbar-brand">
+                <img src="dist/img/ppg.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                        style="opacity: .8">
+                <span class="brand-text font-weight-light">PPG Jakpus</span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=BASEURL?>">PPGJakpus</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?=BASEURL?>kegiatan">Kegiatan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=BASEURL?>tpq">TPQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=BASEURL?>galeri">Galeri</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?=BASEURL?>kontak">Kontak</a>
-                    </li>
-                </ul>
-            </div>
+
+            <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+              <!-- Left navbar links -->
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">Kegiatan</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="./tpq.html" class="nav-link">TPQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Galeri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Kontak</a>
+                  </li>
+              </ul>
+           </div>
         </div>
     </nav>
-
-    <div class="jumbotron jumbotron-img">
-        <div class="container">
-        </div>
+    <!-- /.navbar -->
     </div>
+    <!-- /.content-header -->
 
-    <div class="container-fluid">
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
         <div class="row">
-            <!-- Blog Entries Column -->
-            <div class="col-md-8">
-                <div class="card border-0 my-4">
-                    <div class="card-body">
-                        <h5 class="pb-1 mb-3 border-warning border-bottom" style="border-color: yellow;">Festival Anak Sholeh</h5>
-                        <div class="col-md-12">
-                            <div class="row">
-                                <img src="<?=BASEURL?>dist/img/photo2.png" class="img-thumbnail m-0 p-0  col-md-3 img-mycustom" alt="">
-                                <img src="<?=BASEURL?>dist/img/photo3.jpg" class="img-thumbnail m-0 p-0  col-md-3 img-mycustom" alt="">
-                                <img src="<?=BASEURL?>dist/img/photo4.jpg" class="img-thumbnail m-0 p-0  col-md-3 img-mycustom" alt="">
-                                <div class="col-md-3 rounded text-center">
-                                    <button class="btn btn-primary my-5">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card border-0 my-4">
-                    <div class="card-body">
-                        <h5 class="pb-1 mb-3 border-warning border-bottom" style="border-color: yellow;">Bimbingan dan Konseling Orang Tua</h5>
-                        <div class="col-md-12">
-                            <div class="row">
-                                <img src="<?=BASEURL?>dist/img/photo2.png" class="img-thumbnail m-0 p-0  col-md-3 img-mycustom" alt="">
-                                <img src="<?=BASEURL?>dist/img/photo3.jpg" class="img-thumbnail m-0 p-0  col-md-3 img-mycustom" alt="">
-                                <img src="<?=BASEURL?>dist/img/photo4.jpg" class="img-thumbnail m-0 p-0  col-md-3 img-mycustom" alt="">
-                                <div class="col-md-3 rounded text-center">
-                                    <button class="btn btn-primary my-5">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card border-0 my-4">
-                    <div class="card-body">
-                        <h5 class="pb-1 mb-3 border-warning border-bottom" style="border-color: yellow;">Pengajian Rutin Muda-Mudi</h5>
-                        <div class="col-md-12">
-                            <div class="row">
-                                <img src="<?=BASEURL?>dist/img/photo2.png" class="img-thumbnail m-0 p-0  col-md-3 img-mycustom" alt="">
-                                <img src="<?=BASEURL?>dist/img/photo3.jpg" class="img-thumbnail m-0 p-0  col-md-3 img-mycustom" alt="">
-                                <img src="<?=BASEURL?>dist/img/photo4.jpg" class="img-thumbnail m-0 p-0  col-md-3 img-mycustom" alt="">
-                                <div class="col-md-3 rounded text-center">
-                                    <button class="btn btn-primary my-5">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="col-lg-8">
+            <div class="card bg-transparent shadow-none">
+              <div class="card-header border-dark">
+                  <h5 class="card-title">Festival Anak Sholeh 2019</h5>
+              </div>
+              <div class="card-body">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+              </div>
+            </div>
+            <div class="card bg-transparent shadow-none">
+              <div class="card-header border-dark">
+                  <h5 class="card-title">Bimbingan Konseling dari orang tua</h5>
+              </div>
+              <div class="card-body">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+              </div>
+            </div>
+            <div class="card bg-transparent shadow-none">
+              <div class="card-header border-dark">
+                  <h5 class="card-title">Pengajian Rutin Muda mudi</h5>
+              </div>
+              <div class="card-body">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+                <img src="vendor\almasaeed2010\adminlte\dist\img\default-150x150.png" class="img-thumbnail p-0 mb-3" style="max-width:150px">
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title m-0">Featured</h5>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">Special title treatment</h6>
+
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
 
-            <!-- Sidebar Widgets Column -->
-            <div class="col-md-4">
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="card-title m-0">Featured</h5>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">Special title treatment</h6>
 
-                <!-- Search Widget -->
-                <div class="card my-4">
-                    <h5 class="card-header">Search</h5>
-                    <div class="card-body">
-                        <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-append">
-                            <button class="btn btn-secondary" type="button">Go!</button>
-                        </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Categories Widget -->
-                <div class="card my-4">
-                    <h5 class="card-header">Tahun</h5>
-                    <div class="card-body">
-                        <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#">2020</a>
-                            </li>
-                            <li>
-                                <a href="#">2019</a>
-                            </li>
-                            <li>
-                                <a href="#">2018</a>
-                            </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#">2017</a>
-                            </li>
-                            <li>
-                                <a href="#">2015</a>
-                            </li>
-                            <li>
-                                <a href="#">2014</a>
-                            </li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                    <!-- Side Widget -->
-                    <div class="card my-4">
-                        <h5 class="card-header">Side Widget</h5>
-                    <div class="card-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, amet eos. Facere suscipit maiores commodi omnis excepturi perspiciatis similique, cum fuga voluptates unde dignissimos! Illum sit quam optio laborum deleniti.
-                    </div>
-                </div>
-
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
+          </div>
+          <!-- /.col-md-6 -->
         </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
     </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
-    <!-- Footer -->
-    <footer class="py-2 mt-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
-        </div>
-        <!-- /.container -->
-    </footer>
-    <script src="<?=BASEURL?>dist/js/jquery/jquery.min.js"></script>
-    <script src="<?=BASEURL?>vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2019 PPG Jakpus</strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="vendor/almasaeed2010/adminlte/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="vendor/almasaeed2010/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="vendor/almasaeed2010/adminlte/dist/js/adminlte.min.js"></script>
 </body>
 </html>
