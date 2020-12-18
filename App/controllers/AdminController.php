@@ -14,4 +14,9 @@ class AdminController extends Controller
     {
         $this->view('administrator/index');
     }
+
+    public function album()
+    {
+        $this->view('administrator/album/index');
+    }
 }

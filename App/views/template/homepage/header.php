@@ -17,10 +17,10 @@
                 <!-- Left navbar links -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="./kegiatan.html" class="nav-link">Kegiatan</a>
+                        <a href="<?= BASEURL ?>kegiatan" class="nav-link">Kegiatan</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./tpq.html" class="nav-link">TPQ</a>
+                        <a href="<?= BASEURL ?>tpq" class="nav-link">TPQ</a>
                     </li>
                     <li class="nav-item">
                     <a href="#" class="nav-link">Galeri</a>

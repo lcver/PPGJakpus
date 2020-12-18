@@ -41,9 +41,9 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="<?= BASEURL ?>admin/album" class="nav-link">
             <i class="fa fa-camera-retro nav-icon"></i>
-            <p>Kegiatan</p>
+            <p>Album</p>
           </a>
         </li>
         <li class="nav-header">DOCUMENT</li>
